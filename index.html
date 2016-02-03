@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms with Bootstrap CSS</title>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+  </head>
+  
+  <body> 
+  	
+  	<div class="container">
+  		<div class="row">
+  			<h1>Forms with Bootstrap CSS</h1>
+  			<a href="http://getbootstrap.com/css/#forms">Bootstrap Forms Documentation</a>
+  		</div>
+	  	<div class="row">
+	  		<div class="col-md-6">
+		  		<h2>Basic Input Types</h2>
+				<form id="testForm">
+					<div class="form-group">
+						<label for="textInput">Text: </label>
+						<input type="text" class="form-control" id="textInput" name="textInput" placeholder="Text" />
+					</div>
+					<div class="form-group">
+					    <label for="exampleInputPassword1">Password:</label>
+					    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					
+					<div class="form-group">	
+						<label for="">Checkboxes: Can select multiple.</label>						
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" name="checkbox1" value="1">
+						    Option One
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" name="checkbox2" value="2">
+						    Option Two
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" name="checkbox3" value="3">
+						    Option Three
+						  </label>
+						</div>								
+					</div>
+					<div class="form-group">
+						<label for="">Radio Buttons: Can only select one.</label>
+						<div class="radio">						
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						    Option one is this and that&mdash;be sure to include why it's great
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						    Option two can be something else and selecting it will deselect option one
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+						    Option three is also completely different
+						  </label>
+						</div>
+						<div class="radio disabled">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" disabled>
+						    Option four is disabled
+						  </label>
+						</div>
+					</div>
+					<div class="form-group">
+					<label for="">Select List</label>
+						<select name="selectList" class="form-control">
+						  <option value="1">Thing 1</option>
+						  <option value="2">Thing 2</option>
+						  <option value="3">Thing 3</option>
+						  <option value="4">Fourth Thing</option>
+						  <option value="Five Five Five">Five Five Five</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="textArea">Text Area (multi-line text):</label>
+						<textarea id="textArea" name="textArea" class="form-control" rows="4">Placeholder</textarea>
+					</div>
+					
+					<input class="btn btn-default btn-primary" type="submit" value="Submit Form">					
+				</form>
+			</div>
+			<div class="col-md-6">
+				<h2>HTML5 Input Types</h2>
+				<form id="HTML5Form">
+					<div class="form-group">
+						<label for="numberInput">Number: </label>
+						<input type="number" class="form-control" id="numberInput" name="numberInput" />
+					</div>
+					<input class="btn btn-default btn-primary" type="submit" value="Submit Form">
+				</form>
+			</div>
+		</div>
+	</div>
+
+  </body>
+</html>
