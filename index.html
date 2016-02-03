@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Forms with Bootstrap CSS</title>
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap: Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<script type="text/javascript" src="jquery.min.js"></script>
@@ -92,17 +92,39 @@
 						<label for="textArea">Text Area (multi-line text):</label>
 						<textarea id="textArea" name="textArea" class="form-control" rows="4">Placeholder</textarea>
 					</div>
+					<div class="form-group">
+					    <label for="exampleInputFile">File Select/Upload (non-functional):</label>
+					    <input type="file" id="exampleInputFile">
+					  </div>
 					
 					<input class="btn btn-default btn-primary" type="submit" value="Submit Form">					
 				</form>
 			</div>
 			<div class="col-md-6">
 				<h2>HTML5 Input Types</h2>
+				<p>(a.k.a 'New' Input Types)</p>
 				<form id="HTML5Form">
 					<div class="form-group">
-						<label for="numberInput">Number: </label>
+						<label for="numberInput">Number: (add attribute step="0.01" for decimals)</label>
 						<input type="number" class="form-control" id="numberInput" name="numberInput" />
 					</div>
+					<div class="form-group">
+						<label for="dateInput">Date: </label>
+						<input type="date" class="form-control" id="dateInput" name="dateInput" />
+					</div>
+					<div class="form-group">
+						<label for="dateTimeInput">Time: </label>
+						<input type="time" class="form-control" id="timeInput" name="timeInput" />
+					</div>
+					<div class="form-group">
+						<label for="colorInput">Color: </label>
+						<input type="color" class="form-control" id="colorInput" name="colorInput" />
+					</div>
+					<div class="form-group">
+						<label for="emailInput">Email: </label>
+						<input type="email" class="form-control" id="emailInput" name="emailInput" />
+					</div>
+
 					<input class="btn btn-default btn-primary" type="submit" value="Submit Form">
 				</form>
 			</div>
